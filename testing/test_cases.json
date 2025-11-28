@@ -1,0 +1,182 @@
+[
+  {
+    "category": "Clear Duplicates - Paraphrased",
+    "q1": "How do I learn Python programming?",
+    "q2": "What are the best resources to study Python?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Clear Duplicates - Synonyms",
+    "q1": "How can I lose weight fast?",
+    "q2": "What are effective ways to reduce body weight quickly?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Clear Duplicates - Same Intent",
+    "q1": "What is machine learning?",
+    "q2": "Can you explain what machine learning means?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Clear Duplicates - Rephrased",
+    "q1": "How do I reset my password?",
+    "q2": "What's the process to recover my account password?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Clear Non-Duplicates - Unrelated",
+    "q1": "What is the capital of France?",
+    "q2": "How do I make a chocolate cake?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Clear Non-Duplicates - Different Topics",
+    "q1": "How do I cook rice?",
+    "q2": "What is the theory of relativity?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Clear Non-Duplicates - Different Domains",
+    "q1": "What are the symptoms of COVID-19?",
+    "q2": "How do I fix a leaking faucet?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Tricky - Negation",
+    "q1": "Should I invest in stocks?",
+    "q2": "Should I not invest in stocks?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Tricky - Similar Words Different Intent",
+    "q1": "How to break into a car?",
+    "q2": "How to break into a career in software?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Tricky - Same Topic Opposite Question",
+    "q1": "What are the benefits of drinking coffee?",
+    "q2": "What are the disadvantages of drinking coffee?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Tricky - Similar but Different Context",
+    "q1": "How do I become a data scientist?",
+    "q2": "How do I become a machine learning engineer?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Tricky - Time-based Different",
+    "q1": "What was the best smartphone in 2020?",
+    "q2": "What is the best smartphone in 2024?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Tricky - Location-based Different",
+    "q1": "What are the best universities in USA?",
+    "q2": "What are the best universities in India?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Tricky - Specific vs General",
+    "q1": "How do I learn Python?",
+    "q2": "How do I learn programming?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Tricky - Cause vs Effect",
+    "q1": "What causes global warming?",
+    "q2": "What are the effects of global warming?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Edge Case - Identical Questions",
+    "q1": "What is artificial intelligence?",
+    "q2": "What is artificial intelligence?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Edge Case - Single Word Different",
+    "q1": "How do I learn Python quickly?",
+    "q2": "How do I learn Python slowly?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Edge Case - Numbers Matter",
+    "q1": "What are 5 ways to improve productivity?",
+    "q2": "What are 10 ways to improve productivity?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Edge Case - Short Questions",
+    "q1": "What is AI?",
+    "q2": "Define AI",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Semantic Duplicates - Different Wording",
+    "q1": "Why is the sky blue?",
+    "q2": "What makes the sky appear blue?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Semantic Duplicates - Technical vs Layman",
+    "q1": "What is photosynthesis?",
+    "q2": "How do plants make food from sunlight?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Semantic Non-Duplicates - Opposite Actions",
+    "q1": "How to gain weight?",
+    "q2": "How to lose weight?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Semantic Non-Duplicates - Similar Process Different Goal",
+    "q1": "How to prepare for IELTS?",
+    "q2": "How to prepare for TOEFL?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Complex - Multiple Concepts",
+    "q1": "What's the difference between Python and Java?",
+    "q2": "Which is better for beginners, Python or Java?",
+    "expected": "Not Duplicate"
+  },
+  {
+    "category": "Complex - Comparison Questions",
+    "q1": "iPhone vs Android: which is better?",
+    "q2": "Should I buy an iPhone or Android phone?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Complex - Process Questions",
+    "q1": "What are the steps to build a website?",
+    "q2": "How do I create a website from scratch?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Ambiguous - Could Go Either Way",
+    "q1": "How do I start learning data science?",
+    "q2": "What should I study to become a data scientist?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Ambiguous - Context Dependent",
+    "q1": "What is the best laptop?",
+    "q2": "Which laptop should I buy?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Technical - Programming",
+    "q1": "How to reverse a string in Python?",
+    "q2": "What's the method to reverse a string in Python?",
+    "expected": "Duplicate"
+  },
+  {
+    "category": "Technical - Programming Different Language",
+    "q1": "How to reverse a string in Python?",
+    "q2": "How to reverse a string in Java?",
+    "expected": "Not Duplicate"
+  }
+]

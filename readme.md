@@ -44,13 +44,53 @@ Each method is evaluated and compared, providing a comprehensive overview of str
 
 ## Model Performance
 
-| Model | Accuracy | Precision | Recall | F1-Score |
-|-------|----------|-----------|--------|----------|
-| **XGBoost (Word2Vec + Features)** | 0.7957 | 0.7217 | 0.7300 | 0.7258 |
-| **PyTorch Model** | 70.20 | NA | NA | NA |
-| <span style="color:#90EE90;">**BERT Fine-tuned**</span> | 0.8628 | 0.7959 | 0.8518 | 0.8229 |
+| Model                                                   | Accuracy | Precision | Recall | F1-Score |
+| ------------------------------------------------------- | -------- | --------- | ------ | -------- |
+| **XGBoost (Word2Vec + Features)**                       | 0.7957   | 0.7217    | 0.7300 | 0.7258   |
+| **PyTorch Model**                                       | 70.20    | NA        | NA     | NA       |
+| <span style="color:#90EE90;">**BERT Fine-tuned**</span> | 0.8628   | 0.7959    | 0.8518 | 0.8229   |
 
-*Note: Run the evaluation cells in the notebook to see specific performance metrics. XGBoost reports all four metrics, while PyTorch models report accuracy only. BERT reports accuracy and F1-score.*
+_Note: Run the evaluation cells in the notebook to see specific performance metrics. XGBoost reports all four metrics, while PyTorch models report accuracy only. BERT reports accuracy and F1-score._
+
+## Custom Testing
+
+A comprehensive test suite is available to evaluate the model on various question pairs, including edge cases and tricky scenarios.
+
+### Running Tests
+
+```bash
+python tests.py
+```
+
+This will:
+
+- Load the latest trained BERT checkpoint
+- Run 30+ diverse test cases from `testing/test_cases.json`
+- Generate a detailed report in `testing/outputs.txt`
+
+### Test Categories
+
+The test suite covers:
+
+- **Clear Duplicates**: Paraphrased questions, synonyms, same intent
+- **Clear Non-Duplicates**: Unrelated topics, different domains
+- **Tricky Cases**: Negation, similar words with different intent, opposite questions, context variations
+- **Edge Cases**: Identical questions, single word differences, number variations
+- **Semantic Cases**: Technical vs layman terms, opposite actions
+- **Complex Cases**: Comparison questions, multi-concept questions, process-oriented
+
+### Custom Test Cases (Using BERT)
+
+Add your own test cases by editing `testing/test_cases.json`:
+
+```json
+{
+  "category": "Your Category",
+  "q1": "First question",
+  "q2": "Second question",
+  "expected": "Duplicate" or "Not Duplicate"
+}
+```
 
 ## Requirements
 
@@ -63,12 +103,9 @@ Each method is evaluated and compared, providing a comprehensive overview of str
 - `models/`: Saved models (Word2Vec, XGBoost, BERT checkpoints)  
   _Note: Model files are not uploaded due to large size. Please train and save models locally as needed._
 
-## References
+## Dataset Link
 
 - [Quora Question Pairs Dataset Source](https://www.kaggle.com/c/quora-question-pairs)
-- [scikit-learn](https://scikit-learn.org/)
-- [PyTorch](https://pytorch.org/)
-- [HuggingFace Transformers](https://huggingface.co/transformers/)
 
 ## Contributions
 

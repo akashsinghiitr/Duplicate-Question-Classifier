@@ -1,0 +1,278 @@
+================================================================================
+Duplicate Question Classifier - Test Results
+Timestamp: 2025-11-28 15:19:00
+Model: BERT Fine-tuned
+Device: cuda
+================================================================================
+
+Test Case 1:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How do I learn Python programming?
+Question 2: What are the best resources to study Python?
+Duplicate Probability: 0.7410
+Prediction: Duplicate
+Expected: Duplicate
+Status: ✅ PASS
+
+Test Case 2:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How can I lose weight fast?
+Question 2: What are effective ways to reduce body weight quickly?
+Duplicate Probability: 0.9571
+Prediction: Duplicate
+Expected: Duplicate
+Status: ✅ PASS
+
+Test Case 3:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What is machine learning?
+Question 2: Can you explain what machine learning means?
+Duplicate Probability: 0.8441
+Prediction: Duplicate
+Expected: Duplicate
+Status: ✅ PASS
+
+Test Case 4:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How do I reset my password?
+Question 2: What's the process to recover my account password?
+Duplicate Probability: 0.8245
+Prediction: Duplicate
+Expected: Duplicate
+Status: ✅ PASS
+
+Test Case 5:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What is the capital of France?
+Question 2: How do I make a chocolate cake?
+Duplicate Probability: 0.0010
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+Test Case 6:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How do I cook rice?
+Question 2: What is the theory of relativity?
+Duplicate Probability: 0.0015
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+Test Case 7:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What are the symptoms of COVID-19?
+Question 2: How do I fix a leaking faucet?
+Duplicate Probability: 0.0008
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+Test Case 8:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: Should I invest in stocks?
+Question 2: Should I not invest in stocks?
+Duplicate Probability: 0.3447
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+Test Case 9:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How to break into a car?
+Question 2: How to break into a career in software?
+Duplicate Probability: 0.0050
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+Test Case 10:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What are the benefits of drinking coffee?
+Question 2: What are the disadvantages of drinking coffee?
+Duplicate Probability: 0.5567
+Prediction: Duplicate
+Expected: Not Duplicate
+Status: ❌ FAIL
+
+Test Case 11:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How do I become a data scientist?
+Question 2: How do I become a machine learning engineer?
+Duplicate Probability: 0.0984
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+Test Case 12:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What was the best smartphone in 2020?
+Question 2: What is the best smartphone in 2024?
+Duplicate Probability: 0.6619
+Prediction: Duplicate
+Expected: Not Duplicate
+Status: ❌ FAIL
+
+Test Case 13:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What are the best universities in USA?
+Question 2: What are the best universities in India?
+Duplicate Probability: 0.0287
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+Test Case 14:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How do I learn Python?
+Question 2: How do I learn programming?
+Duplicate Probability: 0.0587
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+Test Case 15:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What causes global warming?
+Question 2: What are the effects of global warming?
+Duplicate Probability: 0.9486
+Prediction: Duplicate
+Expected: Not Duplicate
+Status: ❌ FAIL
+
+Test Case 16:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What is artificial intelligence?
+Question 2: What is artificial intelligence?
+Duplicate Probability: 0.9561
+Prediction: Duplicate
+Expected: Duplicate
+Status: ✅ PASS
+
+Test Case 17:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How do I learn Python quickly?
+Question 2: How do I learn Python slowly?
+Duplicate Probability: 0.9660
+Prediction: Duplicate
+Expected: Not Duplicate
+Status: ❌ FAIL
+
+Test Case 18:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What are 5 ways to improve productivity?
+Question 2: What are 10 ways to improve productivity?
+Duplicate Probability: 0.7971
+Prediction: Duplicate
+Expected: Duplicate
+Status: ✅ PASS
+
+Test Case 19:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What is AI?
+Question 2: Define AI
+Duplicate Probability: 0.2642
+Prediction: Not Duplicate
+Expected: Duplicate
+Status: ❌ FAIL
+
+Test Case 20:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: Why is the sky blue?
+Question 2: What makes the sky appear blue?
+Duplicate Probability: 0.8943
+Prediction: Duplicate
+Expected: Duplicate
+Status: ✅ PASS
+
+Test Case 21:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What is photosynthesis?
+Question 2: How do plants make food from sunlight?
+Duplicate Probability: 0.0048
+Prediction: Not Duplicate
+Expected: Duplicate
+Status: ❌ FAIL
+
+Test Case 22:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How to gain weight?
+Question 2: How to lose weight?
+Duplicate Probability: 0.9586
+Prediction: Duplicate
+Expected: Not Duplicate
+Status: ❌ FAIL
+
+Test Case 23:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How to prepare for IELTS?
+Question 2: How to prepare for TOEFL?
+Duplicate Probability: 0.0063
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+Test Case 24:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What's the difference between Python and Java?
+Question 2: Which is better for beginners, Python or Java?
+Duplicate Probability: 0.0292
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+Test Case 25:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: iPhone vs Android: which is better?
+Question 2: Should I buy an iPhone or Android phone?
+Duplicate Probability: 0.0385
+Prediction: Not Duplicate
+Expected: Duplicate
+Status: ❌ FAIL
+
+Test Case 26:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What are the steps to build a website?
+Question 2: How do I create a website from scratch?
+Duplicate Probability: 0.5951
+Prediction: Duplicate
+Expected: Duplicate
+Status: ✅ PASS
+
+Test Case 27:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How do I start learning data science?
+Question 2: What should I study to become a data scientist?
+Duplicate Probability: 0.4272
+Prediction: Not Duplicate
+Expected: Duplicate
+Status: ❌ FAIL
+
+Test Case 28:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: What is the best laptop?
+Question 2: Which laptop should I buy?
+Duplicate Probability: 0.7507
+Prediction: Duplicate
+Expected: Duplicate
+Status: ✅ PASS
+
+Test Case 29:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How to reverse a string in Python?
+Question 2: What's the method to reverse a string in Python?
+Duplicate Probability: 0.9261
+Prediction: Duplicate
+Expected: Duplicate
+Status: ✅ PASS
+
+Test Case 30:
+────────────────────────────────────────────────────────────────────────────────
+Question 1: How to reverse a string in Python?
+Question 2: How to reverse a string in Java?
+Duplicate Probability: 0.0345
+Prediction: Not Duplicate
+Expected: Not Duplicate
+Status: ✅ PASS
+
+================================================================================
