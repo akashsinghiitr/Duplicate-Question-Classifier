@@ -10,11 +10,9 @@ This classifier can help Q&A websites like Stack Overflow and Quora automaticall
 
 This project demonstrates several approaches, leveraging both classical ML and DL techniques. In particular, it covers:
 
-- **Feature Engineering & Classical ML:** Extracting custom text features (common words, stopwords, fuzzy metrics, etc.), generating Word2Vec embeddings, and training an XGBoost classifier on these engineered features.
-- **Deep Learning:** Building and training LSTM and Transformer-based architectures in PyTorch for sequence modeling.
-- **Transfer Learning:** Fine-tuning a pre-trained BERT model for robust semantic understanding.
-
-Each method is evaluated and compared, providing a comprehensive overview of strategies for duplicate detection in Q&A platforms.
+- <ins>**Feature Engineering & Classical ML:**</ins> Extracting custom text features (common words, stopwords, fuzzy metrics, etc.), generating Word2Vec embeddings, and training an XGBoost classifier on these engineered features.
+- <ins>**Deep Learning:**</ins> Building and training LSTM and Transformer-based architectures in PyTorch for sequence modeling.
+- <ins>**Transfer Learning:**</ins> Fine-tuning a pre-trained BERT model for robust semantic understanding.
 
 ## Credit
 
@@ -53,11 +51,11 @@ I took help from the following research papers in identifying the optimal archit
 
 | Model                                                                    | Training Rows | Accuracy | Precision | Recall | F1-Score |
 | ------------------------------------------------------------------------ | ------------- | -------- | --------- | ------ | -------- |
-| **XGBoost (Word2Vec + Features)**                                        | 40,000        | 0.7957   | 0.7217    | 0.7300 | 0.7258   |
-| **PyTorch Model**                                                        | 404,290       | 0.7578   | 0.7339    | 0.5377 | 0.6207   |
-| <span style="color:#90EE90;">**BERT Fine-tuned**</span> (Best so far ✅) | 100,000       | 0.8628   | 0.7959    | 0.8518 | 0.8229   |
+| **XGBoost (Word2Vec + Features)**                                        | 40k       | 0.7957   | 0.7217    | 0.7300 | 0.7258   |
+| **PyTorch Model**                                                        | ~400k      | 0.7578   | 0.7339    | 0.5377 | 0.6207   |
+| <span style="color:#90EE90;">**BERT Fine-tuned**</span> (Best so far ✅) | 100k       | 0.8628   | 0.7959    | 0.8518 | 0.8229   |
 
-## Custom Testing
+## Custom Testing (For the BERT approach)
 
 A comprehensive test suite is available to evaluate the model on various question pairs, including edge cases and tricky scenarios.
 
@@ -70,7 +68,7 @@ python tests.py
 This will:
 
 - Load the latest trained BERT checkpoint
-- Run 30+ diverse test cases from `testing/test_cases.json`
+- Run 30 diverse test cases from `testing/test_cases.json`
 - Generate a detailed report in `testing/outputs.txt`
 
 ### Test Categories
@@ -84,7 +82,7 @@ The test suite covers:
 - **Semantic Cases**: Technical vs layman terms, opposite actions
 - **Complex Cases**: Comparison questions, multi-concept questions, process-oriented
 
-### Custom Test Cases (Using BERT)
+### Custom Test Cases
 
 Add your own test cases by editing `testing/test_cases.json`:
 
