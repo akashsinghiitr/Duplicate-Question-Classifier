@@ -8,10 +8,10 @@ This classifier can help Q&A websites like Stack Overflow and Quora automaticall
 
 ## Summary
 
-This project demonstrates several approaches to automatically identifying duplicate questions, leveraging both classical ML and DL techniques. It covers:
+This project demonstrates several approaches, leveraging both classical ML and DL techniques. In particular, it covers:
 
 - **Feature Engineering & Classical ML:** Extracting custom text features (common words, stopwords, fuzzy metrics, etc.), generating Word2Vec embeddings, and training an XGBoost classifier on these engineered features.
-- **Deep Learning:** Building and training LSTM and Transformer models in PyTorch for sequence modeling.
+- **Deep Learning:** Building and training LSTM and Transformer-based architectures in PyTorch for sequence modeling.
 - **Transfer Learning:** Fine-tuning a pre-trained BERT model for robust semantic understanding.
 
 Each method is evaluated and compared, providing a comprehensive overview of strategies for duplicate detection in Q&A platforms.
@@ -33,24 +33,22 @@ Each method is evaluated and compared, providing a comprehensive overview of str
 
 - **Vocabulary:** Built from tokenized corpus.
 - **Data Preparation:** Questions converted to index sequences, padded for batching.
-- **Model:** Transformer-based classifier (`MyNN`)
+- **Model:** LSTM and Transformer-based classifiers (`MyNN`)
 - **Training:** BCEWithLogitsLoss, Adam optimizer
 
 ### 3. BERT Fine-Tuning (Most accurate till now ✅)
 
 - **Tokenizer:** `bert-base-uncased`
 - **Model:** `BertForSequenceClassification` (HuggingFace Transformers)
-- **Training:** Trainer API, custom metrics (accuracy, F1)
+- **Training:** Trainer API, custom metrics (accuracy, F1, precision, recall)
 
 ## Model Performance
 
-| Model                                                   | Accuracy | Precision | Recall | F1-Score |
-| ------------------------------------------------------- | -------- | --------- | ------ | -------- |
-| **XGBoost (Word2Vec + Features)**                       | 0.7957   | 0.7217    | 0.7300 | 0.7258   |
-| **PyTorch Model**                                       | 0.7578   | 0.7339    | 0.5377     | 0.6207       |
-| <span style="color:#90EE90;">**BERT Fine-tuned**</span> | 0.8628   | 0.7959    | 0.8518 | 0.8229   |
-
-_Note: Run the evaluation cells in the notebook to see specific performance metrics. XGBoost reports all four metrics, while PyTorch models report accuracy only. BERT reports accuracy and F1-score._
+| Model                                                                    | Training Rows | Accuracy | Precision | Recall | F1-Score |
+| ------------------------------------------------------------------------ | ------------- | -------- | --------- | ------ | -------- |
+| **XGBoost (Word2Vec + Features)**                                        | 40,000        | 0.7957   | 0.7217    | 0.7300 | 0.7258   |
+| **PyTorch Model**                                                        | 404,290       | 0.7578   | 0.7339    | 0.5377 | 0.6207   |
+| <span style="color:#90EE90;">**BERT Fine-tuned**</span> (Best so far ✅) | 100,000       | 0.8628   | 0.7959    | 0.8518 | 0.8229   |
 
 ## Custom Testing
 
@@ -99,7 +97,7 @@ Add your own test cases by editing `testing/test_cases.json`:
 ## Structure
 
 - `duplicate_classifier.ipynb`: Main notebook with all code and experiments
-- `csvs/quora_questions.csv`: Dataset (link provided in [References](#References))
+- `csvs/quora_questions.csv`: Dataset (link provided in [Dataset Link](#References))
 - `models/`: Saved models (Word2Vec, XGBoost, BERT checkpoints)  
   _Note: Model files are not uploaded due to large size. Please train and save models locally as needed._
 
@@ -114,5 +112,4 @@ If you have suggestions, improvements, or new models to add, feel free to open a
 
 ## License
 
-This project is licensed under the MIT License.  
-See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
