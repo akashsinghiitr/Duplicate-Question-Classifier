@@ -16,6 +16,13 @@ This project demonstrates several approaches, leveraging both classical ML and D
 
 Each method is evaluated and compared, providing a comprehensive overview of strategies for duplicate detection in Q&A platforms.
 
+## Credit
+
+I took help from the following research papers in identifying the optimal architecture for the DL approach:
+- [Paper 1](https://www.researchgate.net/publication/343666306_Duplicate_Question_Detection_in_Question_Answer_Website_using_Convolutional_Neural_Network)
+- [Paper 2](https://www.igminresearch.jp/articles/html/igmin135)
+- [Paper 3](https://ijarcce.com/wp-content/uploads/2023/04/IJARCCE.2023.12369.pdf)
+
 ## Dataset
 
 - **Source:** Quora duplicate questions dataset (`quora_questions.csv`)
