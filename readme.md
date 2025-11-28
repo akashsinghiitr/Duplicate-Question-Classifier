@@ -88,7 +88,7 @@ Add your own test cases by editing `testing/test_cases.json`:
   "category": "Your Category",
   "q1": "First question",
   "q2": "Second question",
-  "expected": "Duplicate" or "Not Duplicate"
+  "expected": "Duplicate/Not Duplicate"
 }
 ```
 
