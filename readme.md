@@ -48,7 +48,7 @@ Each method is evaluated and compared, providing a comprehensive overview of str
 |-------|----------|-----------|--------|----------|
 | **XGBoost (Word2Vec + Features)** | 0.7957 | 0.7217 | 0.7300 | 0.7258 |
 | **PyTorch Model** | 70.20 | NA | NA | NA |
-| **BERT Fine-tuned** | 0.8629 | NA | NA | 0.8229 |
+| <span style="color:#90EE90;">**BERT Fine-tuned**</span> | 0.8628 | 0.7959 | 0.8518 | 0.8229 |
 
 *Note: Run the evaluation cells in the notebook to see specific performance metrics. XGBoost reports all four metrics, while PyTorch models report accuracy only. BERT reports accuracy and F1-score.*
 
