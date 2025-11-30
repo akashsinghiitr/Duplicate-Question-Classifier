@@ -2,3 +2,4 @@ results
 venv
 models
 quora_questions.csv
+/testing/outputs.txt
