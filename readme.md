@@ -53,7 +53,7 @@ I took help from the following research papers in identifying the optimal archit
 | ------------------------------------------------------------------------ | ------------- | -------- | --------- | ------ | -------- |
 | **XGBoost (Word2Vec + Features)**                                        | 40k       | 0.7957   | 0.7217    | 0.7300 | 0.7258   |
 | **PyTorch Model**                                                        | ~400k      | 0.7578   | 0.7339    | 0.5377 | 0.6207   |
-| <span style="color:#90EE90;">**BERT Fine-tuned**</span> (Best so far ✅) | 200k       | 0.8712   | 0.7885    | 0.8876 | 0.8351   |
+| <span style="color:#90EE90;">**BERT Fine-tuned**</span> (Best so far ✅) | 200k       | 0.8763   | 0.7894    | 0.8952 | 0.8417   |
 
 ## Custom Testing (For the BERT approach)
 
